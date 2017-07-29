@@ -1,0 +1,7 @@
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Business\bin\Debug\ZT_Ordering.Business.dll
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Business\bin\Debug\ZT_Ordering.Business.pdb
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Business\obj\Debug\ZT_Ordering.Business.csprojResolveAssemblyReference.cache
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Business\obj\Debug\ZT_Ordering.Business.dll
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Business\obj\Debug\ZT_Ordering.Business.pdb
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Business\bin\Debug\ZT_Ordering.Common.dll
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Business\bin\Debug\ZT_Ordering.Common.pdb

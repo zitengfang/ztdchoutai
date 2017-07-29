@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9D2CD73-B3DE-4957-84AD-83E3972F2F6A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZT_Ordering.Business</RootNamespace>
+    <AssemblyName>ZT_Ordering.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\AbstractFactory.cs" />
+    <Compile Include="BLL\AdministratorBLL.cs" />
+    <Compile Include="BLL\AdminMerchantRelationBLL.cs" />
+    <Compile Include="BLL\FoodBLL.cs" />
+    <Compile Include="BLL\FoodImageInfoRelationBLL.cs" />
+    <Compile Include="BLL\FoodOrderRelationBLL.cs" />
+    <Compile Include="BLL\FoodTypeBLL.cs" />
+    <Compile Include="BLL\ImageInfoBLL.cs" />
+    <Compile Include="BLL\ImageTypeBLL.cs" />
+    <Compile Include="BLL\InvoiceBLL.cs" />
+    <Compile Include="BLL\MerchantBLL.cs" />
+    <Compile Include="BLL\MerchantImageRelationBLL.cs" />
+    <Compile Include="BLL\MerchantPayPatternBLL.cs" />
+    <Compile Include="BLL\OrderInfoBLL.cs" />
+    <Compile Include="BLL\PayModeBLL.cs" />
+    <Compile Include="BLL\PayPatternBLL.cs" />
+    <Compile Include="BLL\RoleInfoBLL.cs" />
+    <Compile Include="BLL\RoleRelationBLL.cs" />
+    <Compile Include="BLL\SQLDALFactory.cs" />
+    <Compile Include="BLL\TableInfoBLL.cs" />
+    <Compile Include="BLL\UrgeOrderInfoBLL.cs" />
+    <Compile Include="BLL\UserInfoBLL.cs" />
+    <Compile Include="BLL\WeChatUserInfoBLL.cs" />
+    <Compile Include="IDAL\IAdministrator.cs" />
+    <Compile Include="IDAL\IAdminMerchantRelation.cs" />
+    <Compile Include="IDAL\IFood.cs" />
+    <Compile Include="IDAL\IFoodImageInfoRelation.cs" />
+    <Compile Include="IDAL\IFoodOrderRelation.cs" />
+    <Compile Include="IDAL\IFoodType.cs" />
+    <Compile Include="IDAL\IImageInfo.cs" />
+    <Compile Include="IDAL\IImageType.cs" />
+    <Compile Include="IDAL\IInvoice.cs" />
+    <Compile Include="IDAL\IMerchant.cs" />
+    <Compile Include="IDAL\IMerchantImageRelation.cs" />
+    <Compile Include="IDAL\IMerchantPayPattern.cs" />
+    <Compile Include="IDAL\IOrderInfo.cs" />
+    <Compile Include="IDAL\IPayMode.cs" />
+    <Compile Include="IDAL\IPayPattern.cs" />
+    <Compile Include="IDAL\IRoleInfo.cs" />
+    <Compile Include="IDAL\IRoleRelation.cs" />
+    <Compile Include="IDAL\ITableInfo.cs" />
+    <Compile Include="IDAL\IUrgeOrderInfo.cs" />
+    <Compile Include="IDAL\IUserInfo.cs" />
+    <Compile Include="IDAL\IWeChatUserInfo.cs" />
+    <Compile Include="Model\Administrator.cs" />
+    <Compile Include="Model\AdminMerchantRelation.cs" />
+    <Compile Include="Model\Food.cs" />
+    <Compile Include="Model\FoodImageInfoRelation.cs" />
+    <Compile Include="Model\FoodOrderRelation.cs" />
+    <Compile Include="Model\FoodType.cs" />
+    <Compile Include="Model\ImageInfo.cs" />
+    <Compile Include="Model\ImageType.cs" />
+    <Compile Include="Model\Invoice.cs" />
+    <Compile Include="Model\Merchant.cs" />
+    <Compile Include="Model\MerchantImageRelation.cs" />
+    <Compile Include="Model\MerchantPayPattern.cs" />
+    <Compile Include="Model\OrderInfo.cs" />
+    <Compile Include="Model\PayMode.cs" />
+    <Compile Include="Model\PayPattern.cs" />
+    <Compile Include="Model\RoleInfo.cs" />
+    <Compile Include="Model\RoleRelation.cs" />
+    <Compile Include="Model\TableInfo.cs" />
+    <Compile Include="Model\UrgeOrderInfo.cs" />
+    <Compile Include="Model\UserInfo.cs" />
+    <Compile Include="Model\WeChatUserInfo.cs" />
+    <Compile Include="MySqlDAL\Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerDAL\AdministratorSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\AdminMerchantRelationSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\FoodImageInfoRelationSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\FoodOrderRelationSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\FoodSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\FoodTypeSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\ImageInfoSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\ImageTypeSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\InvoiceSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\MerchantImageRelationSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\MerchantPayPatternSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\MerchantSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\OrderInfoSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\PayModeSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\PayPatternSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\RoleInfoSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\RoleRelationSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\TableInfoSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\UrgeOrderInfoSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\UserInfoSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\WeChatUserInfoSqlDAL.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ZT_Ordering.Common\ZT_Ordering.Common.csproj">
+      <Project>{b39f9494-6e10-4f3b-951d-6ff2c20afd3d}</Project>
+      <Name>ZT_Ordering.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
