@@ -100,7 +100,15 @@
                             <a href="Order.aspx" target="iframepage">订单管理</a>
                         </li>
                          <li>
-                            <a HREF="Food.aspx" target="iframepage">菜品管理</a>
+                            <a  href="#">菜品管理</a>
+                             <ul>
+								<li>
+									<a HREF="FoodCategory.aspx" target="iframepage">菜品类别</a>
+								</li>
+								<li>
+									<a HREF="FoodList.aspx" target="iframepage">菜品列表</a>
+								</li>
+							 </ul>
                         </li>
 						<li>
 							<a HREF="styles.html"  target="iframepage">样式</a>

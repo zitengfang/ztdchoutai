@@ -76,6 +76,9 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\ZT_Ordering.DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -94,6 +97,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="OrderInfoService.asmx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -109,7 +114,28 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="OrderInfoService.asmx.cs">
+      <DependentUpon>OrderInfoService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZT_Ordering.Business\ZT_Ordering.Business.csproj">
+      <Project>{f9d2cd73-b3de-4957-84ad-83e3972f2f6a}</Project>
+      <Name>ZT_Ordering.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZT_Ordering.Common\ZT_Ordering.Common.csproj">
+      <Project>{b39f9494-6e10-4f3b-951d-6ff2c20afd3d}</Project>
+      <Name>ZT_Ordering.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZT_Ordering.Model\ZT_Ordering.Model.csproj">
+      <Project>{07b93063-7783-4585-815f-ff50ff075ef8}</Project>
+      <Name>ZT_Ordering.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

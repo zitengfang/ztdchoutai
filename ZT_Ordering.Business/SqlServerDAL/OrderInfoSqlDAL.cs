@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ZT_Ordering.Business.IDAL;
+using ZT_Ordering.Business.Model;
 using ZT_Ordering.Common;
 
 namespace ZT_Ordering.Business.SqlServerDAL
@@ -35,7 +36,7 @@ namespace ZT_Ordering.Business.SqlServerDAL
         /// <summary>
         /// 增加一条数据
         /// </summary>
-        public int Add(ZT_Ordering.Business.Model.OrderInfo model)
+        public int Add(OrderInfo model)
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("insert into OrderInfo(");
@@ -72,7 +73,7 @@ namespace ZT_Ordering.Business.SqlServerDAL
         /// <summary>
         /// 更新一条数据
         /// </summary>
-        public bool Update(ZT_Ordering.Business.Model.OrderInfo model)
+        public bool Update(OrderInfo model)
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("update OrderInfo set ");
@@ -118,7 +119,6 @@ namespace ZT_Ordering.Business.SqlServerDAL
         /// </summary>
         public bool Delete(int id)
         {
-
             StringBuilder strSql = new StringBuilder();
             strSql.Append("delete from OrderInfo ");
             strSql.Append(" where id=@id");
@@ -160,9 +160,8 @@ namespace ZT_Ordering.Business.SqlServerDAL
         /// <summary>
         /// 得到一个对象实体
         /// </summary>
-        public ZT_Ordering.Business.Model.OrderInfo GetModel(int id)
+        public OrderInfo GetModel(int id)
         {
-
             StringBuilder strSql = new StringBuilder();
             strSql.Append("select  top 1 id,number,createTime,status,remark,payModeId,merchantCode,userId from OrderInfo ");
             strSql.Append(" where id=@id");
@@ -171,7 +170,7 @@ namespace ZT_Ordering.Business.SqlServerDAL
             };
             parameters[0].Value = id;
 
-            ZT_Ordering.Business.Model.OrderInfo model = new ZT_Ordering.Business.Model.OrderInfo();
+            OrderInfo model = new OrderInfo();
             DataSet ds = MSSqlHelper.Query(strSql.ToString(), parameters);
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -187,9 +186,9 @@ namespace ZT_Ordering.Business.SqlServerDAL
         /// <summary>
         /// 得到一个对象实体
         /// </summary>
-        public ZT_Ordering.Business.Model.OrderInfo DataRowToModel(DataRow row)
+        public OrderInfo DataRowToModel(DataRow row)
         {
-            ZT_Ordering.Business.Model.OrderInfo model = new ZT_Ordering.Business.Model.OrderInfo();
+            OrderInfo model = new OrderInfo();
             if (row != null)
             {
                 if (row["id"] != null && row["id"].ToString() != "")

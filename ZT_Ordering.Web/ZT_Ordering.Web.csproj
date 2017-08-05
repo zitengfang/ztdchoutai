@@ -174,6 +174,9 @@
     <Content Include="AdminPortal\styles.html" />
     <Content Include="AdminPortal\tables.html" />
     <Content Include="AdminPortal\Main.aspx" />
+    <Content Include="AdminPortal\FoodList.aspx" />
+    <Content Include="AdminPortal\FoodCategory.aspx" />
+    <Content Include="AdminPortal\AddFood.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -232,6 +235,27 @@
     </Compile>
     <Compile Include="AdminPortal\Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPortal\FoodList.aspx.cs">
+      <DependentUpon>FoodList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPortal\FoodList.aspx.designer.cs">
+      <DependentUpon>FoodList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPortal\FoodCategory.aspx.cs">
+      <DependentUpon>FoodCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPortal\FoodCategory.aspx.designer.cs">
+      <DependentUpon>FoodCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPortal\AddFood.aspx.cs">
+      <DependentUpon>AddFood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPortal\AddFood.aspx.designer.cs">
+      <DependentUpon>AddFood.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

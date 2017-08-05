@@ -65,8 +65,26 @@ namespace ZT_Ordering.Business.BLL
         /// </summary>
         public OrderInfo GetModel(int id)
         {
-
             return factory.GetOrderInfoDAL().GetModel(id);
+        }
+
+        /// <summary>
+        /// 得到一个对象实体
+        /// </summary>
+        public OrderInfo GetModel(string number)
+        {
+            OrderInfo resultModel = new OrderInfo();
+            string strWhere = " merchantCode ='"+number+"'";
+            DataSet dsList = factory.GetOrderInfoDAL().GetList(strWhere);
+            if (dsList !=null && dsList.Tables.Count>0)
+            {
+                List<OrderInfo> listOrder = DataTableToList(dsList.Tables[0]);
+                if (listOrder.Count ==1)
+                {
+                    resultModel = listOrder[0];
+                }
+            }
+            return resultModel;
         }
 
         /// <summary>
@@ -138,10 +156,13 @@ namespace ZT_Ordering.Business.BLL
         /// <summary>
         /// 分页获取数据列表
         /// </summary>
-        //public DataSet GetList(int PageSize,int PageIndex,string strWhere)
-        //{
-        //return factory.GetOrderInfoDAL().GetList(PageSize,PageIndex,strWhere);
-        //}
+        public DataSet GetListByUserIdForPage(string userId,int PageSize, int PageIndex)
+        {            
+            string strWhere = " userId ='"+userId+"'";
+            return factory.GetOrderInfoDAL().GetListByPage(strWhere,"",PageSize, PageIndex);
+        }
+
+
 
         #endregion  BasicMethod
         #region  ExtensionMethod

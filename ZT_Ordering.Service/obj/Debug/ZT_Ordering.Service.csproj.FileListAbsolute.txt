@@ -31,3 +31,10 @@ E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Service\bin\Microsoft.Cod
 E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Service\obj\Debug\ZT_Ordering.Service.csprojResolveAssemblyReference.cache
 E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Service\obj\Debug\ZT_Ordering.Service.dll
 E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Service\obj\Debug\ZT_Ordering.Service.pdb
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Service\bin\Newtonsoft.Json.dll
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Service\bin\ZT_Ordering.Business.dll
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Service\bin\ZT_Ordering.Common.dll
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Service\bin\ZT_Ordering.Model.dll
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Service\bin\ZT_Ordering.Business.pdb
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Service\bin\ZT_Ordering.Common.pdb
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Service\bin\ZT_Ordering.Model.pdb
