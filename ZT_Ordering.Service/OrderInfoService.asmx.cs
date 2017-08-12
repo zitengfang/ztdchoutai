@@ -40,7 +40,7 @@ namespace ZT_Ordering.Service
             if (!string.IsNullOrEmpty(pageIndex) && !string.IsNullOrEmpty(pageSize))
             {
                 //获取列表
-                DataSet DSList = orderInfoBll.GetListByPage(userId,"", Convert.ToInt32(pageIndex), Convert.ToInt32(pageSize));
+                DataSet DSList = orderInfoBll.GetListByPage("userId =" + userId,"", Convert.ToInt32(pageIndex), Convert.ToInt32(pageSize));
 
                 if (DSList != null && DSList.Tables.Count > 0)
                 {

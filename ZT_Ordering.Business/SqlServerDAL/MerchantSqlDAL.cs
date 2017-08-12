@@ -306,30 +306,31 @@ namespace ZT_Ordering.Business.SqlServerDAL
             return MSSqlHelper.Query(strSql.ToString());
         }
 
-        /*
+        
 		/// <summary>
 		/// 分页获取数据列表
 		/// </summary>
-		public DataSet GetList(int PageSize,int PageIndex,string strWhere)
+		public Merchant GetMerchantByCode(string code)
 		{
-			SqlParameter[] parameters = {
-					new SqlParameter("@tblName", SqlDbType.VarChar, 255),
-					new SqlParameter("@fldName", SqlDbType.VarChar, 255),
-					new SqlParameter("@PageSize", SqlDbType.Int),
-					new SqlParameter("@PageIndex", SqlDbType.Int),
-					new SqlParameter("@IsReCount", SqlDbType.Bit),
-					new SqlParameter("@OrderType", SqlDbType.Bit),
-					new SqlParameter("@strWhere", SqlDbType.VarChar,1000),
-					};
-			parameters[0].Value = "Merchant";
-			parameters[1].Value = "id";
-			parameters[2].Value = PageSize;
-			parameters[3].Value = PageIndex;
-			parameters[4].Value = 0;
-			parameters[5].Value = 0;
-			parameters[6].Value = strWhere;	
-			return MSSqlHelper.RunProcedure("UP_GetRecordByPage",parameters,"ds");
-		}*/
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select  top 1 id,code,name,phone,email,address,remark from Merchant ");
+            strSql.Append(" where code=@code");
+            SqlParameter[] parameters = {
+                    new SqlParameter("@code", SqlDbType.NVarChar,64)
+            };
+            parameters[0].Value = code;
+
+            Merchant model = new Merchant();
+            DataSet ds = MSSqlHelper.Query(strSql.ToString(), parameters);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                return DataRowToModel(ds.Tables[0].Rows[0]);
+            }
+            else
+            {
+                return null;
+            }
+        } 
 
         #endregion  BasicMethod
         #region  ExtensionMethod

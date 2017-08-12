@@ -138,10 +138,10 @@ namespace ZT_Ordering.Business.BLL
         /// <summary>
         /// 分页获取数据列表
         /// </summary>
-        //public DataSet GetList(int PageSize,int PageIndex,string strWhere)
-        //{
-        //return factory.GetMerchantDAL().GetList(PageSize,PageIndex,strWhere);
-        //}
+        public Merchant GetMerchantByCode(string code)
+        {
+            return factory.GetMerchantDAL().GetMerchantByCode(code);
+        }
 
         #endregion  BasicMethod
         #region  ExtensionMethod

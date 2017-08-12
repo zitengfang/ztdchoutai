@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ZT_Ordering.Business</RootNamespace>
     <AssemblyName>ZT_Ordering.Business</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,6 +56,7 @@
     <Compile Include="BLL\MerchantImageRelationBLL.cs" />
     <Compile Include="BLL\MerchantPayPatternBLL.cs" />
     <Compile Include="BLL\OrderInfoBLL.cs" />
+    <Compile Include="BLL\PaymentAccountBLL.cs" />
     <Compile Include="BLL\PayModeBLL.cs" />
     <Compile Include="BLL\PayPatternBLL.cs" />
     <Compile Include="BLL\RoleInfoBLL.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="IDAL\IMerchantImageRelation.cs" />
     <Compile Include="IDAL\IMerchantPayPattern.cs" />
     <Compile Include="IDAL\IOrderInfo.cs" />
+    <Compile Include="IDAL\IPaymentAccount.cs" />
     <Compile Include="IDAL\IPayMode.cs" />
     <Compile Include="IDAL\IPayPattern.cs" />
     <Compile Include="IDAL\IRoleInfo.cs" />
@@ -98,6 +101,7 @@
     <Compile Include="Model\MerchantImageRelation.cs" />
     <Compile Include="Model\MerchantPayPattern.cs" />
     <Compile Include="Model\OrderInfo.cs" />
+    <Compile Include="Model\PaymentAccount.cs" />
     <Compile Include="Model\PayMode.cs" />
     <Compile Include="Model\PayPattern.cs" />
     <Compile Include="Model\RoleInfo.cs" />
@@ -121,6 +125,7 @@
     <Compile Include="SqlServerDAL\MerchantPayPatternSqlDAL.cs" />
     <Compile Include="SqlServerDAL\MerchantSqlDAL.cs" />
     <Compile Include="SqlServerDAL\OrderInfoSqlDAL.cs" />
+    <Compile Include="SqlServerDAL\PaymentAccountSqlDAL.cs" />
     <Compile Include="SqlServerDAL\PayModeSqlDAL.cs" />
     <Compile Include="SqlServerDAL\PayPatternSqlDAL.cs" />
     <Compile Include="SqlServerDAL\RoleInfoSqlDAL.cs" />

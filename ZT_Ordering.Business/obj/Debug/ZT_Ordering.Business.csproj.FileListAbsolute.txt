@@ -5,3 +5,16 @@ E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Business\obj\Debug\ZT_Ord
 E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Business\obj\Debug\ZT_Ordering.Business.pdb
 E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Business\bin\Debug\ZT_Ordering.Common.dll
 E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Business\bin\Debug\ZT_Ordering.Common.pdb
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Business\bin\Debug\System.Net.Http.dll
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Business\bin\Debug\System.Net.Http.xml
+E:\Work\Project_WeiXin\project\ZT_Ordering\ZT_Ordering.Business\bin\Debug\zh-Hans\System.Net.Http.resources.dll
+E:\Work\Project_WeiXin\project\ZT_Ordering_Git\ztdchoutai\ZT_Ordering.Business\bin\Debug\ZT_Ordering.Business.dll
+E:\Work\Project_WeiXin\project\ZT_Ordering_Git\ztdchoutai\ZT_Ordering.Business\bin\Debug\ZT_Ordering.Business.pdb
+E:\Work\Project_WeiXin\project\ZT_Ordering_Git\ztdchoutai\ZT_Ordering.Business\bin\Debug\System.Net.Http.dll
+E:\Work\Project_WeiXin\project\ZT_Ordering_Git\ztdchoutai\ZT_Ordering.Business\bin\Debug\ZT_Ordering.Common.dll
+E:\Work\Project_WeiXin\project\ZT_Ordering_Git\ztdchoutai\ZT_Ordering.Business\bin\Debug\ZT_Ordering.Common.pdb
+E:\Work\Project_WeiXin\project\ZT_Ordering_Git\ztdchoutai\ZT_Ordering.Business\bin\Debug\System.Net.Http.xml
+E:\Work\Project_WeiXin\project\ZT_Ordering_Git\ztdchoutai\ZT_Ordering.Business\bin\Debug\zh-Hans\System.Net.Http.resources.dll
+E:\Work\Project_WeiXin\project\ZT_Ordering_Git\ztdchoutai\ZT_Ordering.Business\obj\Debug\ZT_Ordering.Business.csprojResolveAssemblyReference.cache
+E:\Work\Project_WeiXin\project\ZT_Ordering_Git\ztdchoutai\ZT_Ordering.Business\obj\Debug\ZT_Ordering.Business.dll
+E:\Work\Project_WeiXin\project\ZT_Ordering_Git\ztdchoutai\ZT_Ordering.Business\obj\Debug\ZT_Ordering.Business.pdb

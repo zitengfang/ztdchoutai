@@ -47,9 +47,9 @@ namespace ZT_Ordering.Business.IDAL
         int GetRecordCount(string strWhere);
         DataSet GetListByPage(string strWhere, string orderby, int startIndex, int endIndex);
         /// <summary>
-        /// 根据分页获得数据列表
+        /// 根据编码获取商家信息
         /// </summary>
-        //DataSet GetList(int PageSize,int PageIndex,string strWhere);
+        Merchant GetMerchantByCode(string code);
         #endregion  成员方法
         #region  MethodEx
 

@@ -163,6 +163,11 @@ namespace ZT_Ordering.Business.BLL
         /// <returns></returns>
         public abstract IWeChatUserInfo GetWeChatUserInfoDAL();
 
+        /// <summary>
+        /// 商家支付账户
+        /// </summary>
+        /// <returns></returns>
+        public abstract IPaymentAccount GetPaymentAccountDAL();
 
         #endregion
 

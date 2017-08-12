@@ -204,7 +204,14 @@ namespace ZT_Ordering.Business.BLL
             return new WeChatUserInfoSqlDAL();
         }
 
-
+        /// <summary>
+        /// 商家支付账户
+        /// </summary>
+        /// <returns></returns>
+        public override IPaymentAccount GetPaymentAccountDAL()
+        {
+            return new PaymentAccountSqlDAL();
+        }
 
     }
 }
